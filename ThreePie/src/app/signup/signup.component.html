@@ -1,0 +1,24 @@
+<body>
+  <form class="signin" [formGroup]="signupForm" (ngSubmit)="signUp()">
+    <div class="container" id="container">
+      <div class="gr" action="#">
+        <h1>Kayıt Ol</h1>
+
+        <span>Hesabını oluştur</span>
+        <input type="text" placeholder="Ad" formControlName="Ad" />
+        <input type="text" placeholder="Soyad" formControlName="Soyad" />
+        <input type="text" placeholder="Şehir" formControlName="Şehir" />
+        <input type="text" placeholder="Cinsiyet" formControlName="Cinsiyet" />
+        <input type="email" placeholder="Email" formControlName="email" />
+        <input type="password" placeholder="Şifre" formControlName="password" />
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <a href="#" routerLink="/login">Zaten Bir Hesabım Var</a>
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+  </form>
+</body>

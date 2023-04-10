@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "batuhan",
+      "lastname": "demir",
+      "e-mail": "batu14@hotmail.com",
+      "password": "123xd"
+    },
+    {
+      "id": 2,
+      "name": "ilkay",
+      "lastname": "kaysanak",
+      "email": "ilkay14@hotmail.com",
+      "password": "123xd"
+    },
+    {
+      "id": 3,
+      "name": "emre",
+      "lastname": "yılmaz",
+      "email": "emre7@hotmail.com",
+      "password": "123xd"
+    }
+  ],
+  "signup": [
+    {
+      "name": "Batuhan",
+      "lastname": "Demir",
+      "email": "",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Burak",
+      "lastname": "Karadurak",
+      "email": "burak12@hotmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "hasan",
+      "lastname": "kaçan",
+      "email": "hasan1@hotmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "Burak",
+      "lastname": "İcardioğulları",
+      "email": "burakicardiyetapanoğulları@hotmail.com",
+      "password": "31",
+      "id": 4
+    },
+    {
+      "name": "İlkay",
+      "lastname": "Göttenyiyen",
+      "email": "ilkay31@hotmail.com",
+      "password": "31",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+#navContainer {
+  font-family: "Colvetica";
+  color: white;
+  font-size: large;
+}
+
+.navbar {
+  background-color: #222831;
+}
+#logo {
+  width: 160px;
+  margin-left: 10px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.button {
+  background-color: #222831;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+}
+
+#navbar-search {
+  margin-left: 150px;
+}
+
+#navHomepage {
+  font-family: "Colvetica";
+  text-align: center;
+  margin-top: 12px;
+  color: white;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}

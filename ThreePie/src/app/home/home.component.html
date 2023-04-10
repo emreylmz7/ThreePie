@@ -1,0 +1,52 @@
+<div class="container py-3" id="homee">
+  <div class="row">
+    <div class="col-md-9">
+      <div *ngFor="let advert of adverts" class="card mt-3 bg-light">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="card-img-top"
+              id="card-img"
+              src="{{ advert.imageUrl }}"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4">
+            <div class="card-body">
+              <h5 class="card-title">{{ advert.description }}</h5>
+              <p class="card-text">{{ advert.name }}</p>
+              <a href="#" class="btn-custom">Konaklama Teklif Et</a>
+            </div>
+            <div class="text-muted p-3">2 days ago</div>
+          </div>
+          <div class="col-md-4 text-center p-3">
+            <h4 class="text-success">Misafir Kabul Ediyor</h4>
+            <p class="text-muted">last login 4 hours ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="filter">
+        <form>
+          <h3>Arama Filtreleme</h3>
+          <div class="form-group">
+            <label for="search">Ara:</label>
+            <input type="text" class="form-control" id="search" name="search" />
+          </div>
+          <div class="form-group">
+            <label for="category">Durumu:</label>
+            <select class="form-control" id="category" name="category">
+              <option value="">Hepsi</option>
+              <option value="books">Müsait</option>
+              <option value="movies">Müsait Değil</option>
+              <option value="music">Kişiye Göre</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-custom">Filtrele</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

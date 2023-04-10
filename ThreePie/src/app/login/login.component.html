@@ -1,0 +1,36 @@
+<body>
+  <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <div class="gr" action="#">
+          <h1>Giriş Yap</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>Hesabını gir</span>
+          <input type="email" placeholder="Email" formControlName="email" />
+          <input
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+          />
+          <a href="#">Şifreni mi unuttun?</a>
+          <button>Giriş Yap</button>
+        </div>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1>Merhaba!</h1>
+            <p>Kayıt ol ve gezintinin tadını çıkar!</p>
+            <button class="ghost" id="signUp" routerLink="/signup">
+              Kayıt Ol
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>

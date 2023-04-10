@@ -1,0 +1,115 @@
+.btn-custom {
+  background-color: #f0b923; /* yeşil */
+  border: none;
+  color: #ffffff; /* beyaz */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #f36730; /* daha koyu yeşil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+#card-img {
+  height: 230px;
+}
+
+.rating {
+  /* Center the content */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row-reverse;
+}
+
+.rating__star:hover,
+.rating__star:hover ~ .rating__star {
+  color: transparent;
+}
+
+/*
+Make all previous stars selected when hover on a star
+Note that we use \`flex-direction: row-reverse\` on the container
+*/
+.rating__star:hover:before,
+.rating__star:hover ~ .rating__star:before {
+  color: #eab308;
+  content: "★";
+  left: 0;
+  position: absolute;
+}
+
+.rating__star {
+  font-size: 1.5rem;
+
+  /* Reset styles for button */
+  background-color: transparent;
+  border: transparent;
+  margin: 0 2px;
+  padding: 0;
+
+  /* Used to position the hover state */
+  position: relative;
+}
+
+// BUUUUU ***************************************************************************************
+
+.filter {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.filter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #f36730;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+  cursor: pointer;
+}

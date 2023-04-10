@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container" id="navContainer">
+    <img id="logo" src="assets/logom_new.png" alt="logo" />
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex w-50" id="navbar-search" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Konum Ara"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-warning" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navItems">
+        <!-- <li class="nav-item ">
+          <button class="nav-link active button" aria-current="page" routerLink="/home">Ana Sayfa <i class="fa-solid fa-house"></i></button>
+        </li> -->
+        <li class="nav-item" id="navHomepage">
+          <a
+            class="navbar-text"
+            href="#"
+            style="text-decoration: none; color: white"
+            >Anasayfa <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <button
+            class="nav-link dropdown-toggle button"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            dropdownHover
+          >
+            Profilim
+            <i class="fa-solid fa-user"></i>
+          </button>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" routerLink="/profil"
+                >Profil <i class="fa-solid fa-address-card"></i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/message"
+                >Mesajlar <i class="fa-solid fa-message"></i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                >Seyehatler <i class="fa-solid fa-route mx-1"></i
+              ></a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" routerLink="/profilsettings"
+                >Hesap Ayarları <i class="fa-solid fa-gear"></i
+              ></a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/help"
+                >Yardım <i class="fa-solid fa-circle-info"></i
+              ></a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" routerLink="/"
+                >Oturumu Kapat <i class="fa-solid fa-right-from-bracket"></i
+              ></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="btn btn-outline-warning mx-2"
+        routerLink="/login"
+      >
+        Giriş Yap <i class="fa-solid fa-right-to-bracket"></i>
+      </button>
+    </div>
+  </div>
+</nav>
